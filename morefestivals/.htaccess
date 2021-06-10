@@ -1,0 +1,4 @@
+Options All -Indexes
+
+ErrorDocument 403 http://philippe.sinners.be/morefestivals/403.html
+ErrorDocument 404 http://philippe.sinners.be/morefestivals/404.html
