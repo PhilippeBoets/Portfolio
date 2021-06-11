@@ -80,7 +80,7 @@
 	<section id="home" class="main-banner parallaxie" style="background: url('images/abstract-code.jpg')">
 		<div class="heading">
 			<h1>Philippe Boets</h1>
-			<p>Ik ben Philippe student Cloud en Cyber security en dit is mijn portfolio!</p>
+			<p>Ik ben Philippe laatstejaarsstudent Cloud en Cyber security en dit is mijn portfolio om aan te tonen dat ik klaar ben voor het werkveld!</p>
 			<h3 class="cd-headline clip is-full-width">
 				<span>Philippe in een notendop: </span>
 				<span class="cd-words-wrapper">
@@ -128,6 +128,7 @@
                         <p> Ik ben Philippe Boets, laatstejaarsstudent Cloud en Cyber security aan Thomas More Geel klaar om zijn eerste stappen op de arbeidsmarkt te zetten.
                             Naast school heb ik ook nog een heel deel andere interesses. Ik speel accordeon en piano en ben ook actief als trainer aan de zwemclub MOZKA.  </p>
                         <p>In het weekend werk ik als redder in het zwembad van Mol en af en toe bezorg ik ook boodschappen als student bij Albert Heyn.</p>
+                        <p>Contact: <A HREF="mailto:phboets@gmail.com">email</A>, telefoon: +32497628540</p>
                         <a href="cv.pdf" target="_blank" class="sim-btn btn-hover-new" data-text="Download CV"><span>Mijn CV</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -267,19 +268,24 @@
         <div class="container">
            <div class="row text-center">
                <div class="col mb-4">
-                   <a href="http://localhost:3000/" target="_blank"><h4>Project PHP lokaalbeheer <i class="fas fa-link"></i></h4></a>
+                   <a href="https://github.com/PhilippeBoets/IaC_Challenge" target="_blank"><h4>Infrastructure as Code Challenge<i class="fas fa-link"></i></h4></a>
                </div>
            </div>
             <div class="row  mb-5 d-flex align-items-center">
                 <div class="col-lg-4 col-md-8 col-sm-12">
-						<img src="images/lokaalbeheer.png" class="img-fluid" alt="Image">
+						<img src="images/jenkins.png" class="img-fluid" alt="Image">
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12">
-                <p>We kregen in groep de opdracht om de lokaalbezetting van de campus in kaart te brengen om zo problemen met overbezetting op te lossen. We hebben ervoor gekozen om met grafieken te werken. Ik heb me vooral bezig gehouden met het maken van de grafieken en het inlezen van data uit onze database. De anderen hebben de databases aangemaakt en met het PHP framework gewerkt om de administrator rechten en dergelijke op orde te brengen.</p>
-                <p>De nadruk lag bij dit project op het maken van de grafieken en het verwerken van data, niet op de layout van de applicatie. 
-                Voor admin rechten om de applicatie te testen kan u gebruik maken van volgende inlog gegevens: 
+                <p>
+                    Voor het vak Emerging Technologies kregen we de opdracht om via een CI/CD pipeline automatisch een webserver naar Azure te deployen. Dit was een opdracht in groep (3 personen)
+                    maar mijn teamleden waren niet zo gekend in het concept 'IaC' dus heb ik ongeveer 75% van het werk gedaan.
                 </p>
-                <p>Email: ward.kerkhofs@example.com , wachtwoord: admin1234</p>
+                    <p>
+                        Onze pipeline werkt via een jenkins server die verschillende .yaml files gebruikt om een webserver naar Azure te deployen. Deze files zijn terug te vinden via mijn
+                        <a href="https://github.com/PhilippeBoets/IaC_Challenge" target="_blank">github <i class="fas fa-link"></i></a>. Zoals u op de afbeelding kan zien stuurt de server
+                        een melding naar een discord server telkens de pipeline opgestart en ook een tweede melding met de status van de pipeline, succes of fail. Deze pipeline werd opgestart
+                        doormiddel van een web-hook zodat telkens wanneer we iets naar onze github pushen de pipeline automatisch start.
+                    </p>
                 </div>
             </div>
             <div class="row text-center">
@@ -301,13 +307,11 @@
                        github gepushed word.
                    </p>
                    <p>
-                       Meer informatie vindt u in onze documentatie. Deze bevat twee documenten: een plan van aanpak/analyse en een document dat onze realisaties beschrijft.
+                       Meer informatie vindt u in onze <a href="SmartDispenserPhilippeBoets.zip">documentatie</a>. Deze bevat twee documenten: een plan van aanpak/analyse en een document dat onze realisaties beschrijft.
                    </p>
                     </div>
                 <div class="col-lg-4 col-md-8 col-sm-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=XurjHStP4DA" allowfullscreen></iframe>
-                    </div>
+                    <img src="images/dispenser.png" class="img-fluid" alt="Image">
                 </div>
             </div>
             <div class="row text-center">
@@ -323,6 +327,24 @@
                 <p>De opdracht hier is het opstarten van een hosting platform voor web-applicaties in PHP en html5. Voor dit groepswerk werken we op een server die op de campus staat. Hierop gaan we een aantal virtuele machines instaleren, gebruik makend van VMware vSphere. We gaan dan gebruik maken van een docker swarm om zo verschillende klanten hun eigen omgeving te geven. </p>
                 <p>Mijn aandeel in het geheel is het mee aanmaken van virtuele machines, troubleshooting om geïnstalleerde software werkende te krijgen en het integreren van een ticketing systeem voor support voor onze klanten.
                     Via deze <a href="Project_Hosting_projectverslag.pdf" target="_blank">link</a> kan u het projectverslag terugvinden.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col mb-4">
+                    <a href="DevSecOps.pdf" target="_blank"><h4>Paper DevSecOps <i class="fas fa-link"></i></h4></a>
+                </div>
+            </div>
+            <div class="row  mb-5 d-flex align-items-center">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <p>
+                        Voor het vak Emerging Technologies heb ik een korte paper geschreven over DevSecOps. Het opzet van deze paper is het duidelijk maken wat DevSecOps is en waarom het belangrijk is.
+                    </p>
+                    <p>
+                     Daarnaast bespreek ik hoe het geïmplementeerd kan worden in traditionele pipelines en welke tools gebruikt kunnen worden om de pipeline zo veilig mogelijk te houden.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-12">
+                    <img src="images/DevSecOps.png" class="img-fluid" alt="Image">
                 </div>
             </div>
 
